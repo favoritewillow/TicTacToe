@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/pic.jpg);
+  opacity: 0.9;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+.container {  
+  height: 90vh;  
+  position: relative;
+}
+
+#audio-element {
+  display: none;
+}
+
+.container__game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+}
+
+.tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  width: 315px;
+  margin: 0 auto;  
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #092316;
+  border-radius: 5px;
+  background-color: #c4eed9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#winner {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #092316;  
+}
+
+#moves {
+  font-size: 20px;  
+  text-align: center;  
+  color: #092316;  
+}
+
+button {
+  font-size: 18px;   
+  border-radius: 5px;
+  padding: 10px 30px;
+  background-color: #74c19b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  color: #092316;
+}
+
+button:hover {
+  background-color: #288f5c;
+}
+
+table {
+  width: 200px;
+  margin-top: 10px;
+  border-collapse: collapse;
+  background-color: #74c19b;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 120px;
+  right: 100px;
+  position: absolute;  
+}
+
+thead {
+  background-color: #092316;
+  color: #ffffff;  
+}
+
+thead th {
+  padding: 2px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #74c19b;
+}
+
+tbody td {
+  padding: 2px;
+  background-color: #74c19b;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  gap: 835px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 10px;
+  background-color: #c4eed9;
+  border: 1px solid #c4eed9;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.footer-content a, .footer-content p {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #092316;
+  letter-spacing: 0.6px;  
+}
+
+.logo img {
+  display: block;
+  background-color: #c4eed9;
+  border: 1px solid #c4eed9;
+  border-radius: 5px;
+  height: 30px;  
+}
